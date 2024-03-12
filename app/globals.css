@@ -16,8 +16,15 @@
   }
 }
 
+@layer utilities {
+  .custom {
+    color: aqua;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+  user-select: none;
   background: linear-gradient(
       to bottom,
       transparent,
