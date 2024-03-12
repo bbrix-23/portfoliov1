@@ -20,37 +20,39 @@ const Header = () => {
         <p className="text-2xl font-bold">BRIX</p>
       </div>
 
-      <ul className="flex-3 items-center flex space-x-5 hidden sm:flex">
-        <li>
-          <a href="#">HOME</a>
-        </li>
-        <li>
-          <a href="#">ABOUT</a>
-        </li>
-        <li>
-          <a href="#">EXPERIENCES</a>
-        </li>
-        <li>
-          <a href="#">CONTACT</a>
-        </li>
-      </ul>
+      <div className="flex items-center space-x-8">
+        <ul className="flex-3 items-center flex space-x-5 hidden sm:flex">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">EXPERIENCES</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
 
-      <Image
-        className="cursor-pointer hidden md:block"
-        onClick={() => {
-          setDark(!isDark);
-        }}
-        src={isDark ? MoonLight : MoonDark}
-        width={25}
-      />
-      <Image
-        className="cursor-pointer md:hidden"
-        src={isDark ? burgerWhite : burger}
-        onClick={() => {
-          setNavOpen(true);
-        }}
-        width={25}
-      />
+        <Image
+          className="cursor-pointer hidden md:block"
+          onClick={() => {
+            setDark(!isDark);
+          }}
+          src={isDark ? MoonLight : MoonDark}
+          width={22}
+        />
+        <Image
+          className="cursor-pointer md:hidden"
+          src={isDark ? burgerWhite : burger}
+          onClick={() => {
+            setNavOpen(true);
+          }}
+          width={22}
+        />
+      </div>
     </div>
   );
 };

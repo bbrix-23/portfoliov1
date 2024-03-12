@@ -129,9 +129,12 @@ const LandingPage = () => {
 
       {/* body image */}
       <div className="flex md:static justify-center md:h-screen items-end w-full z-0">
+        {/* <img src="../assets/Hero.png" alt="d" /> */}
         <Image
           src={myImage}
-          className="w-64  md:w-full absolute bottom-5 md:static"
+         
+          className="w-full"
+          // className="w-64  md:w-full absolute bottom-5 md:static"
         />
       </div>
       {/* <img src="./myPic.png" height={100} width={200} alt="ay" /> */}
